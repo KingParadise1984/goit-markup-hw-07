@@ -1,13 +1,13 @@
 
 
-.page__header {
+.header {
     padding: 20px;
     border: 1px solid #ececec;
 }
 
 
 
-.info__push {
+.header__container {
     display: flex;
     align-items: center;
 }
@@ -27,31 +27,35 @@
     line-height: 1.19;
     letter-spacing: 0.03em;
     text-decoration: none;
+}
 
-
-&__label {
+.logo__label {
     color: var(--primary-text-color);
 }
-}
+
 /* align-self: flex-end; */
 .nav {
     display: flex;
     align-items: center;
-&__menu {
+}    
+.nav-menu {
     display: flex;
     align-items: center;
 }
-
-&__info {
-    display: flex;
-    align-items: center;
-}
-
-&__item:not(:last-child) {
+.nav__item:not(:last-child) {
     margin-right: 40px;
 }
 
-&__link::after {
+.contacts__link {
+    display: flex;
+    align-items: center;
+}
+
+.contacts__item:not(:last-child) {
+    margin-right: 40px;
+}
+
+.nav__link::after {
     content: '';
     left: 0;
     bottom: -27px;
@@ -66,20 +70,20 @@
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-&__link:hover::after,
-&__link:focus::after {
+.nav__link:hover::after,
+.nav__link:focus::after {
     opacity: 1;
 }
 
-&__link.current::after {
+.nav__link.nav__link__current::after {
     opacity: 1;
 }
 
-&__link.current {
+.nav__link.nav__link__current {
     color: var(--title-text-color);
 }
 
-&__link {
+.nav__link {
     position: relative;
     color: var(--primary-text-color);
     font-weight: 500;
@@ -90,47 +94,47 @@
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-&__link:hover,
-&__link:focus {
+.nav__link:hover,
+.nav__link:focus {
     color: var(--title-text-color);
 }
 
-&__contact {
+.contacts {
     display: flex;
     align-items: center;
     margin-left: auto;
 }
 
-&__info:hover,
-&__info:focus {
+.contacts__link:hover,
+.contacts__link:focus {
     color: var(--title-text-color);
 }
 
-&__info:hover &__phone,
-&__info:focus &__phone {
+.contacts__link:hover .contacts__icon,
+.contacts__link:focus .contacts__icon {
     fill: var(--title-text-color);
 }
 
-&__info:hover &__mail,
-&__info:focus &__mail {
+.contacts__link:hover .contacts__icon,
+.contacts__link:focus .contacts__icon {
     fill: var(--title-text-color);
 }
 
-&__phone,
-&__mail {
+.contacts__icon,
+.contacts__icon {
     order: -1;
     margin-right: 10px;
 }
 
-&__mail {
+.contacts__icon {
     fill: var(--accent-color);
 }
 
-&__phone {
+.contacts__icon {
     fill: var(--accent-color);
 }
 
-&__info {
+.contacts__link {
     color: var(--accent-color);
     font-weight: 500;
     font-size: 14px;
@@ -138,5 +142,4 @@
     letter-spacing: 0.02em;
     text-decoration: none;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 }

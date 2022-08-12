@@ -8,12 +8,12 @@
     text-transform: uppercase;
 }
 
-.product {
+.products {
     display: flex;
     gap: 30px;
 
-
-&__menu {
+}
+.products__box {
     margin-bottom: 30px;
     display: flex;
     justify-content: center;
@@ -23,7 +23,7 @@
     background-color: #f5f4fa;
     border-radius: 4px;
 }
-&__title {
+.products__title {
     color: var(--primary-text-color);
     font-weight: 700;
     font-size: 14px;
@@ -32,10 +32,9 @@
     text-transform: uppercase;
 }
 
-&__text {
+.products__text {
     color: var(--accent-color);
     font-size: 14px;
     line-height: 2;
     letter-spacing: 0.03em;
-}
 }

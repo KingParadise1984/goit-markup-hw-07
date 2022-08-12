@@ -1,4 +1,4 @@
-.company {
+.section__title {
     margin-bottom: 50px;
     color: var(--primary-text-color);
     font-weight: 700;
@@ -6,15 +6,15 @@
     text-align: center;
     line-height: 1.16;
     letter-spacing: 0.03em;
+}
 
-
-&__program {
+.clayens {
     display: flex;
     justify-content: center;
     gap: 30px;
 }
 
-&__logo {
+.clayens__link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -25,19 +25,18 @@
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-&__logo:hover,
-.company__logo:focus {
+.clayens__link:hover,
+.clayens__link:focus {
     border: 1px solid var(--title-text-color);
     fill: var(--title-text-color);
 }
 
-&__logo:hover &__icon,
-&__logo:focus &__icon {
+.clayens__link:hover .clayens__icon,
+.clayens__link:focus .clayens__icon {
     fill: var(--title-text-color);
 }
 
-&__icon {
+.clayens__icon {
     fill: #afb1b8;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 }

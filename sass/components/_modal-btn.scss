@@ -4,7 +4,7 @@
     text-decoration: none;
     border-radius: 6px;
 
-
+}
 .button {
     min-width: 150px;
     padding: 10px 32px 10px 32px;
@@ -24,10 +24,9 @@
 }
 
 /* margin: 350px 700px 200px 700px; */
-&__label {
+.button__label {
     background-color: var(--title-text-color);
     color: var(--primary-white-color);
     border: none;
     text-decoration: none;
-}
 }

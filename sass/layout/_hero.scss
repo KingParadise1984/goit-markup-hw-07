@@ -21,7 +21,7 @@
     padding-bottom: 200px;
 }
 
-.hero-title {
+.hero__title {
     margin-bottom: 30px;
     color: var(--primary-white-color);
     font-weight: 900;
@@ -59,7 +59,7 @@
 
 /* margin: 350px 700px 200px 700px; */
 
-.button__label {
+.hero__button {
     background-color: var(--title-text-color);
     color: var(--primary-white-color);
     border: none;
