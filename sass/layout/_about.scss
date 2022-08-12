@@ -12,8 +12,7 @@
     display: flex;
     gap: 30px;
 
-}
-.products__box {
+&__box {
     margin-bottom: 30px;
     display: flex;
     justify-content: center;
@@ -23,7 +22,8 @@
     background-color: #f5f4fa;
     border-radius: 4px;
 }
-.products__title {
+
+&__title {
     color: var(--primary-text-color);
     font-weight: 700;
     font-size: 14px;
@@ -32,9 +32,13 @@
     text-transform: uppercase;
 }
 
-.products__text {
+&__text {
     color: var(--accent-color);
     font-size: 14px;
     line-height: 2;
     letter-spacing: 0.03em;
 }
+
+
+}
+

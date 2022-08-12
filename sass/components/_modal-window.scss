@@ -212,3 +212,9 @@
 .modal__submit:focus {
     background-color: #188ce8;
 }
+.modal__button {
+    background-color: var(--title-text-color);
+    color: var(--primary-white-color);
+    border: none;
+    text-decoration: none;
+}

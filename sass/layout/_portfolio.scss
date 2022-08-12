@@ -34,22 +34,19 @@
     border-radius: 4px;
 }
 
-.main__label {
+.main__button {
     background-color: #f5f4fa;
     color: var(--primary-text-color);
     border: none;
     text-decoration: none;
 }
 
-.main__label:hover {
+.main__button:hover {
     border: none;
     text-decoration: none;
 }
 
-.main__label:focus {
-    border: none;
-    text-decoration: none;
-}
+
 
 /* ====================section button==================== */
 .info {
@@ -65,29 +62,29 @@
     margin-bottom: 30px;
 }
 
-.info__foto {
+.foto__link {
     display: block;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.info__foto:hover .overlay,
-.info__foto:focus .overlay {
+.foto__link:hover .overlay,
+.foto__link:focus .overlay {
     transform: translate(0, 0);
 }
 
-.info__foto:hover,
-.info__foto:focus {
+.foto__link:hover,
+.foto__link:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
         1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.info__foto:hover,
-.info__foto:focus {
+.foto__link:hover,
+.foto__link:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
         1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.info__foto {
+.foto__link {
     text-decoration: none;
 }
 
@@ -133,7 +130,7 @@
     color: var(--primary-text-color);
 }
 
-.info__page {
+.info__text {
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.03em;

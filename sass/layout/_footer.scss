@@ -4,7 +4,7 @@
     background-color: #2f303a;
 }
 
-.footer__content {
+.footer__container {
     align-items: baseline;
     display: flex;
 }
@@ -150,6 +150,8 @@
     line-height: 1.9;
     letter-spacing: 0.06em;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+
 }
 
 .footer__submit:hover,
@@ -164,4 +166,10 @@
     height: 24px;
     background-image: url('../img/icon\ send.svg');
     margin-left: 10px;
+}
+.footer__button {
+    background-color: var(--title-text-color);
+    color: var(--primary-white-color);
+    border: none;
+    text-decoration: none;
 }
