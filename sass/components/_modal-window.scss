@@ -30,9 +30,13 @@
     transform: translate(-50%, -50%) scale(1);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     padding: 40px;
+   }
+   
     /* ====================madal window============================ */
+ 
     /* ====================modal form============================== */
-&__btn {
+
+    .modal__btn {
     position: absolute;
     top: 10px;
     right: 10px;
@@ -45,23 +49,30 @@
     background-color: transparent;
     border: 1px solid #555555;
     padding: 0;
-}
 
-&__btn:hover,
-&__btn:focus {
+&:hover,
+&:focus {
     border-color: var(--title-text-color);
 }
 
-& .modal__clone {
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-&__btn:hover .modal__clone,
-&__btn:focus .modal__clone {
+
+
+.modal .modal__clone {
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+
+    .modal__btn:hover &,
+.modal__btn:focus & {
     fill: var(--title-text-color);
 }
 
+
 }
+
+
+
 
 
 
@@ -208,12 +219,15 @@
     line-height: 1.9;
     letter-spacing: 0.06em;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.modal__submit:hover,
-.modal__submit:focus {
+&:hover,
+&:focus {
     background-color: #188ce8;
 }
+
+}
+
+
 .modal__button {
     background-color: var(--title-text-color);
     color: var(--primary-white-color);

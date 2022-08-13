@@ -2,8 +2,8 @@
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: #2f303a;
-
-&__link {
+}
+.footer__link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,20 +13,26 @@
     background-color: #44454e;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
         color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-&__link:hover,
-.footer__link:focus {
+&:hover,
+&:focus {
     background-color: var(--title-text-color);
 }
 
-&__link:hover .footer__icon,
-&__link:focus .footer__icon {
+
+&:hover .footer__icon,
+&:focus .footer__icon {
     fill: var(--primary-white-color);
 }
 
 
-}
+}        
+
+
+
+
+
+
 
 .footer__container {
     align-items: baseline;
@@ -156,12 +162,14 @@
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 
-}
-
-.footer__submit:hover,
-.footer__submit:focus {
+&:hover,
+&:focus {
     background-color: #188ce8;
 }
+
+}
+
+
 
 .footer__submit::after {
     content: '';

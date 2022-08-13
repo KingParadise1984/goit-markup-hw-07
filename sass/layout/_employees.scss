@@ -12,8 +12,9 @@
     display: flex;
     justify-content: center;
     gap: 30px;
-
-    &__link {
+}
+ 
+.clayens__link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,23 +23,29 @@
     border: 1px solid #afb1b8;
     border-radius: 4px;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-&__link:hover,
-.clayens__link:focus {
+&:hover,
+&:focus {
     border: 1px solid var(--title-text-color);
     fill: var(--title-text-color);
 }
 
-&__link:hover .clayens__icon,
-&__link:focus .clayens__icon {
+}
+
+
+
+
+.clayens__icon {
+    fill: #afb1b8;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+
+.clayens__link:hover &,
+.clayens__link:focus & {
     fill: var(--title-text-color);
 }
 
-&__icon {
-    fill: #afb1b8;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-}
+
 
 

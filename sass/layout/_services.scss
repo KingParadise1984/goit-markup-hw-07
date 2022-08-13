@@ -15,12 +15,13 @@
 .works {
     display: flex;
     justify-content: space-between;
-
-    &__box {
+}
+  
+.works__box {
     position: relative;
 }
 
-&__text {
+.works__text {
     display: flex;
     position: absolute;
     width: 370px;
@@ -37,6 +38,6 @@
     bottom: 0;
 }
 
-}
+
 
 
